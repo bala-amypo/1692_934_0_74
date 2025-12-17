@@ -1,7 +1,6 @@
 package com.example.demo.entity;
 
 import java.time.LocalDate;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,13 +12,11 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
     private String email;
     private LocalDate dob;
     private float cgpa;
 
-    // Getter and Setter for id
     public Long getId() {
         return id;
     }
@@ -28,7 +25,6 @@ public class Student {
         this.id = id;
     }
 
-    // Getter and Setter for name
     public String getName() {
         return name;
     }
@@ -37,7 +33,6 @@ public class Student {
         this.name = name;
     }
 
-    // Getter and Setter for email
     public String getEmail() {
         return email;
     }
@@ -46,7 +41,6 @@ public class Student {
         this.email = email;
     }
 
-    // Getter and Setter for dob
     public LocalDate getDob() {
         return dob;
     }
@@ -55,7 +49,6 @@ public class Student {
         this.dob = dob;
     }
 
-    // Getter and Setter for cgpa
     public float getCgpa() {
         return cgpa;
     }
@@ -64,7 +57,6 @@ public class Student {
         this.cgpa = cgpa;
     }
 
-    // Parameterized constructor
     public Student(Long id, String name, String email, LocalDate dob, float cgpa) {
         this.id = id;
         this.name = name;
@@ -73,7 +65,6 @@ public class Student {
         this.cgpa = cgpa;
     }
 
-    // Default constructor
     public Student() {
     }
 }
